@@ -8,8 +8,18 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+<<<<<<< HEAD
 int print_char(va_list c);
 int print_string(va_list str);
 int print_S_N(va_list S);
 int print_reverse(va_list r)
+=======
+
+typedef struct identifierStruct
+{
+char *identifier;
+int (*printer)(va_list);
+} identifierStruct;
+
+>>>>>>> origin/gh-pages
 #endif

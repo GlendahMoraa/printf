@@ -1,42 +1,37 @@
 #include "main.h"
 
 /**
- * print_hexadecimal_base - a function that printing base for hex numbers
- * @arg: argument list containing hexadecimal numbers
- * @_case: checks the case if its uppercase or lowercase
- * Return: retrns the number to be printed
+ * print_hex_base -printing base for hexadecimal numbers
+ * @arg: argument list containing hexadecimal
+ * @_case: checks the ccase if uppercase or lower case
+ * Return: number printed
  */
-
-int print_hexadecimal_base(va_list arg, char _case)
+int print_hex_base(va_list arg, char _case)
 {
-	unsigned int n = va_arg(arg, unsigned int);
-	int nChar;
+	unsigned int num = va_arg(arg, unsigned int);
+	int nbrCharacters;
 
-	if (n == 0)
+	if (num == 0)
 		return (_putchar('0'));
-	nChar = print_unsignedIntToHex(n, _case);
+	nbrCharacters = print_unsignedIntToHex(num, _case);
 
-	return (nChar);
+	return (nbrCharacters);
 }
-
 /**
- * print_hex_lower - a function that prints lowercase hex numbers
- * @arg: a list of hexadecimals to be printed
+ * print_hex -prints lower case hexadecimal
+ * @arg: list hexs to print
  * Return: numbers printed
  */
-
-int print_hex_lower(va_list arg)
+int print_hex(va_list arg)
 {
-return (print_hexadecimal_base(arg, 'a'));
+return (print_hex_base(arg, 'a'));
 }
-
 /**
- * print_hex_upper - a function that prints uppercase hexa number
- * @arg: hexadecimal numbers to be printed
- * Return: returns the numbers to be printed
+ * print_HEX - prints upper case hexadecimal
+ * @arg: hexadecimal to print
+ * Return: numbers printed
  */
-
-int print_hex_upper(va_list arg)
+int print_HEX(va_list arg)
 {
-	return (print_hexadecimal_base(arg, 'A'));
+	return (print_hex_base(arg, 'A'));
 }

@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * print_u - prints an unsigned in in decimal notation
+ * print_u - printing an unsigned in in decimal notation
  * @u: unsigned int to print
- *
+ * Description: function printing an unsigned int in decimal notation
  * Return: number of digits printed
  */
+
 int print_u(va_list u)
 {
 	unsigned int a[10];
@@ -33,11 +34,12 @@ int print_u(va_list u)
 }
 
 /**
- * print_o - takes an unsigned int and prints it in octal notation
+ * print_o - taking an unsigned int and printing it in octal notation
  * @o: unsigned int to print
- *
+ * Description: function taking an unsigned int and printing it in octal notation
  * Return: number of digits printed
  */
+
 int print_o(va_list o)
 {
 	unsigned int a[11];
@@ -65,11 +67,12 @@ int print_o(va_list o)
 }
 
 /**
- * print_b - takes an unsigned int and prints it in binary notation
+ * print_b - taking an unsigned int and printing it in binary notation
  * @b: unsigned in to print
- *
+ * Description: function that takes int and prints in binary notation
  * Return: number of digits printed
  */
+
 int print_b(va_list b)
 {
 	unsigned int n, m, i, sum;

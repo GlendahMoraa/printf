@@ -2,11 +2,12 @@
 #include <stdlib.h>
 
 /**
- * print_c - prints a char
+ * print_c - printing a character
  * @c: char to print
- *
+ * Description: function that prints a character
  * Return: always 1
  */
+
 int print_c(va_list c)
 {
 	char ch = (char)va_arg(c, int);
@@ -16,18 +17,21 @@ int print_c(va_list c)
 }
 
 /**
- * print_s - prints a string
- * @s: string to print
- *
+ * print_s - printing a string
+ * @s: string to be printed
+ * Description: function that prints a string
  * Return: number of chars printed
  */
+
 int print_s(va_list s)
 {
 	int count;
 	char *str = va_arg(s, char *);
 
 	if (str == NULL)
+	{
 		str = "(null)";
+	}
 	for (count = 0; str[count]; count++)
 	{
 		_putchar(str[count]);
@@ -36,11 +40,12 @@ int print_s(va_list s)
 }
 
 /**
- * hex_print - prints a char's ascii value in uppercase hex
- * @c: char to print
- *
+ * hex_print - printing a char's ascii value in uppercase hex
+ * @c: char to be printed
+ * Description: function that prints char's ascii value in uppercase hex
  * Return: number of chars printed (always 2)
  */
+
 static int hex_print(char c)
 {
 	int count;
@@ -60,11 +65,12 @@ static int hex_print(char c)
 }
 
 /**
- * print_S - prints a string and nonprintable character ascii values
- * @S: string to print
- *
+ * print_S - printing a string and nonprintable character ascii values
+ * @S: string to be printed
+ * Description: function printing a string and nonprintable character ascii values
  * Return: number of chars printed
  */
+
 int print_S(va_list S)
 {
 	unsigned int i;
@@ -92,11 +98,12 @@ int print_S(va_list S)
 }
 
 /**
- * print_r - prints astring in reverse
+ * print_r - printing a string in reverse
  * @r: string to print
- *
+ * Description: function printing a string in reverse
  * Return: number of chars printed
  */
+
 int print_r(va_list r)
 {
 	char *str;

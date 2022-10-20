@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * print_R - prints a string in rot13
- * @R: string to print
+ * print_R - The function that prints a string in rot13
+ * @R: a string to be print
  *
- * Return: number of chars printed
+ * Return: returns a number of characters to be printed
  */
 int print_R(va_list R)
 {

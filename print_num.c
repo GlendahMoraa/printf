@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_i - prints an integer
- * @i: integer to print
+ * print_i - The function prints an integer
+ * @i: Its and integer to be printed
  *
- * Return: number of chars and digits printed
+ * Return: returns the number of characters and digits to be printed
  */
 int print_i(va_list i)
 {
@@ -40,10 +40,10 @@ int print_i(va_list i)
 }
 
 /**
- * print_d - prints a decimal
- * @d: decimal to print
+ * print_d - This function prints a decimal
+ * @d: A decimal value to be printed
  *
- * Return: number of chars and digits printed
+ * Return: returns the number of characters and digits to be printed
  */
 int print_d(va_list d)
 {
